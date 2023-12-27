@@ -1,0 +1,25 @@
+{
+  "name": "a4e-svg-project",
+  "version": "1.0.0",
+  "description": "A repository of icons - static and animated - along with style sheets and UI classes for development on apps4everyone.tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neal-easterling/a4e-svg-project.git"
+  },
+  "keywords": [
+    "svg",
+    "icons",
+    "animated",
+    "css"
+  ],
+  "author": "Neal Easterling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neal-easterling/a4e-svg-project/issues"
+  },
+  "homepage": "https://github.com/neal-easterling/a4e-svg-project#readme"
+}

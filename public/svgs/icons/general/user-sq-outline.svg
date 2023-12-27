@@ -1,0 +1,7 @@
+<svg aria-label="user" class="a4e icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- DO NOT REMOVE | copyright 2023 by apps4everyone.tech under MIT license -->
+<g fill="currentColor">
+<circle cx="15.0001" cy="7.79999" r="5.4" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0H22C26.4183 0 30 3.58172 30 8V22C30 26.4183 26.4183 30 22 30H8C3.58172 30 0 26.4183 0 22V8ZM2.1 6.1C2.1 3.89086 3.89086 2.1 6.1 2.1H23.9C26.1091 2.1 27.9 3.89086 27.9 6.1V23.9C27.9 26.1091 26.1091 27.9 23.9 27.9H21.6249C22.1605 27.4415 22.5 26.7604 22.5 26V21C22.5 16.8579 19.1421 13.5 15 13.5C10.8579 13.5 7.5 16.8579 7.5 21V26C7.5 26.7604 7.83947 27.4415 8.37512 27.9H6.1C3.89086 27.9 2.1 26.1091 2.1 23.9V6.1Z" />
+</g>
+</svg>
