@@ -1,7 +1,5 @@
 const fs = require('node:fs');
 
-
-
 module.exports = {
     svgToArray: (filePath) =>{
         const file = fs.readFileSync(filePath, {encoding:'utf-8'});

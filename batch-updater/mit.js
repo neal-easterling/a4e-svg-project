@@ -1,9 +1,14 @@
 const fs = require('node:fs');
 const controller = require('./controllers/svgController');
+const path = require('path');
 
 const importFolderPath = "../public/images";
 const readFilePath = importFolderPath + "/";
-const importFolderDir = fs.readdirSync(importFolderPath);
+const folderDir = fs.readdirSync(importFolderPath);
+const extension = '.svg';
+const importFolderDir = folderDir.filter(file=>{
+    return path.extname(file).toLowerCase() === extension;
+});
 const outputFolderPath = './output/';
 let index = 0;
 
