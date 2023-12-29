@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+object#particleImage{
+    display: none;
+}
+#particleContainer{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border: 1px solid red;
+}
+#particleContainer>*{
+    position: absolute;
+}
+
+.particle{
+    bottom: -25%;
+    rotate: 0deg;
+}
+
+.particle.rise{
+    bottom: 125%;
+    rotate: 235deg;
+}
+
