@@ -18,18 +18,19 @@ object#particleImage{
     width: 90%;
     height: 90%;
     border: 1px solid red;
+    overflow: hidden;
 }
 #particleContainer>*{
     position: absolute;
 }
 
 .particle{
-    bottom: -25%;
+    bottom: -15%;
     rotate: 0deg;
 }
 
 .particle.rise{
-    bottom: 125%;
+    bottom: 115%;
     rotate: 235deg;
 }
 
