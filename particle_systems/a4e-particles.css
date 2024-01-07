@@ -17,7 +17,8 @@ object#particleImage{
     position: relative;
     width: 90%;
     height: 90%;
-    border: 1px solid red;
+    border: 5px solid #222;
+    background-color: #333;
     overflow: hidden;
 }
 #particleContainer>*{

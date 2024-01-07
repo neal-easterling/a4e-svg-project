@@ -3,6 +3,8 @@ const container = document.getElementById('particleContainer');
 
 const particleSrc = document.getElementById('particleImage').dataset.src;
 
+const COLORS_ARRAY = ["#0AE", "#36DAB3", "#B73DCB", "#38D22B", "#CE3232", "#FAA525", "#64257D" ];
+
 for(let i=0; i<10; i++){
     let classId=`p${i}`;
     addObj(classId, particleSrc, container);
