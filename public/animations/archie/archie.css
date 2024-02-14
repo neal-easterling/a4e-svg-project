@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#archie-yellow-seated-front{
+  --pant-duration: 1000ms;
+  --animation-curve: ease;
+}
+
+svg #archie-head {
+  animation-name: bob;
+  animation-duration: var(--pant-duration);
+  animation-timing-function: var(--animation-curve);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#archie-head #archie-tongue{
+  height: 40;
+  animation-name: pant;
+  animation-delay: 5ms;
+  animation-duration: var(--pant-duration);
+  animation-timing-function: var(--animation-curve);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: bottom;
+}
+
+@keyframes bob {
+  to{
+    transform: translateY(5px);
+  } 
+}
+@keyframes pant {
+  from{
+    transform: scaleY(0.2);
+  }
+  to{
+    transform: scaleY(1.2);
+  }
+  
+}
