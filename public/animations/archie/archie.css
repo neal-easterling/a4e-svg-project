@@ -8,6 +8,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: rgb(195, 182, 250);
 }
 #archie-yellow-seated-front.pant{
   --pant-duration: 1000ms;
