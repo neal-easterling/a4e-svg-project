@@ -9,40 +9,190 @@ body{
   align-items: center;
   min-height: 100vh;
 }
-#archie-yellow-seated-front{
+#archie-yellow-seated-front.pant{
   --pant-duration: 1000ms;
   --animation-curve: ease;
 }
+#archie-yellow-seated-front.pant *{
+  transform-box: fill-box;
+}
 
-svg #archie-head {
-  animation-name: bob;
+.pant #archie-head {
+  animation-name: headBob;
   animation-duration: var(--pant-duration);
   animation-timing-function: var(--animation-curve);
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-#archie-head #archie-tongue{
-  height: 40;
-  animation-name: pant;
+.pant #archie-tongue{
+  animation-name: tonguePant;
   animation-delay: 5ms;
   animation-duration: var(--pant-duration);
   animation-timing-function: var(--animation-curve);
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  transform-origin: bottom;
+}
+.pant #archie-ear-right-tip, #archie-ear-left-tip{
+  animation-name: earBob;
+  animation-duration: var(--pant-duration);
+  animation-timing-function: var(--animation-curve);
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.pant #archie-ear-right-tip{
+  transform-origin: 100% 0;
+  animation-name: earBob;
+  animation-duration: var(--pant-duration);
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.pant #archie-ear-left-tip{
+  animation-name: earBob;
+  animation-duration: var(--pant-duration);
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.pant #archie-body-front{
+  transform-origin: center;
+  animation-name: breathe;
+  animation-duration: var(--pant-duration);
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.pant  #archie-tail{
+  transform-origin: 90% 100%;
+  animation-name: wag;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.pant #archie-tail-tip{
+  transform-box: fill-box;
+  transform-origin: 6px 6px;
+  transform:rotateZ(-80deg);
+}
+.pant #archie-foot-front-right, 
+.pant #archie-foot-front-left{
+  transform-origin: 50% 3%;
+  animation-name: shuffle;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.pant #archie-foot-front-left{
+  animation-direction: alternate-reverse;
+  animation-delay: 5ms;
+}
+.pant #archie-eye-left-pupil,
+.pant #archie-eye-right-pupil{
+  transform-origin: center;
+  animation-name: lookAround;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-@keyframes bob {
+@keyframes headBob {
   to{
     transform: translateY(5px);
   } 
 }
-@keyframes pant {
+@keyframes tonguePant {
   from{
-    transform: scaleY(0.2);
+    transform: scaleY(0.8);
   }
   to{
-    transform: scaleY(1.2);
+    transform: scaleY(1);
   }
-  
+}
+@keyframes earBob {
+  from{
+    transform: rotateZ(3deg);
+  }
+  to{
+    transform: rotateZ(-2deg);
+  }
+}
+@keyframes breathe {
+  to{
+    transform:scale(1.01);
+  }
+}
+@keyframes wag {
+  from{
+    transform: rotateZ(-10deg);
+  }
+  to{
+    transform: rotateZ(10deg);
+  }
+}
+@keyframes shuffle {
+  0%{
+    transform: rotateZ(-2deg);
+  }
+  15%{
+    transform:rotateZ(0);
+  }
+  35%{
+    transform:rotateZ(0);
+  }
+  45%{
+    transform:rotateZ(1deg);
+  }
+  62%{
+    transform:rotateZ(1deg);
+  }
+  69%{
+    transform:rotateZ(0);
+  }
+  79%{
+    transform:rotateZ(0);
+  }
+  87%{
+    transform:rotateZ(-2deg);
+  }
+  100%{
+    transform:rotateZ(-2deg);
+  }
+}
+@keyframes lookAround {
+  0%{
+    transform: translate(3px);
+  }
+  10%{
+    transform: translate(3px);
+  }
+  20%{
+    transform: translate(-3px, -3px);
+  }
+  30%{
+    transform: translate(-3px, -3px);
+  }
+  40%{
+    transform: translate(-3px, 0);
+  }
+  50%{
+    transform: translate(-3px, 0);
+  }
+  60%{
+    transform: translate(0, 0);
+  }
+  70%{
+    transform: translate(0, 0);
+  }
+  80%{
+    transform: translate(0, -5px);
+  }
+  90%{
+    transform: translate(0, -5px);
+  }
+  95%{
+    transform: rotateZ(-2deg);
+  }
 }
